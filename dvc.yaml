@@ -1,0 +1,13 @@
+stages:
+  make_dataset:
+    cmd: python src/data/make_dataset.py
+    deps:
+    - src/data/make_dataset.py
+    outs:
+    - data/processed
+  preprocessing:
+    cmd: python src/preprocessing/preprocessing.py
+    deps:
+    - src/preprocessing/preprocessing.py
+    outs:
+    - data/interim
