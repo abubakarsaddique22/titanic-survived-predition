@@ -25,7 +25,7 @@ logger.addHandler(file_handler)
 
 def load_data(train_data_path:pd.DataFrame, test_data_path: pd.DataFrame) -> pd.DataFrame:
     """
-    Load data from the data path
+    Load data from the data this path 
     """
     try:
         logging.info("Load train data ")
@@ -86,11 +86,6 @@ def split_Name(train_data:pd.DataFrame,test_data:pd.DataFrame)->pd.DataFrame:
         logging.error("Column not found")
         raise
 
-def encode_categorical_columns(train_data:pd.DataFrame,test_data:pd.DataFrame)->pd.DataFrame:
-    """
-    encode the categorical columns
-
-    """
 
 
 
